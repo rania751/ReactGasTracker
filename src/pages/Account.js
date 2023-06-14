@@ -56,7 +56,7 @@ export const Account = () => {
 
   return (
     <div>
-       <br/><br/><br/> 
+      
        <div className="container">
        <div class="row">
 
@@ -66,16 +66,17 @@ export const Account = () => {
  
   <div class="row align-items-center">
     <div class="col">
-    {snipper ? ( <div>
+    {snipper ? ( <div class="d-flex flex-column align-items-center">
         <h3>Prediction in hours</h3><p>(Max number=180)</p>
-        <input class="form-control" type="text" value={nbr} onChange={(e) => setNbr(e.target.value)} aria-label="default input example"></input>
+        <input class="form-control" type="text" value={nbr} style={{ width: '200px', fontSize: '14px' }} onChange={(e) => setNbr(e.target.value)}  aria-label="default input example"></input>
         <button type="button" class="btn btn-primary mt-2" onClick={() => sendNbr()}>
   Submit
 </button></div>):(<div>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
   <div class="row">
-    <div class="col"></div>
-    <div class="col"></div>
+    {/* <div class="col"></div>
+    */}
+    <div class="col"></div> 
     <div class="col">
             <div class="spinner-grow text-primary" role="status">
   <span class="visually-hidden">Loading...</span>
@@ -86,13 +87,13 @@ export const Account = () => {
 </div>
 <div class="col"></div>
           </div>
-         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
 
 </div>)}
 
     </div>
 
-    <div class="col">
+    {/* <div class="col">
     {snipper ? ( <div>
        <div> <h3>Prediction in minutes  </h3> <span><p>(Max number=180)</p></span></div>
        
@@ -117,7 +118,7 @@ export const Account = () => {
           <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 </div>)}
-    </div>
+    </div> */}
   </div>
   <br/><br/>
 </div>

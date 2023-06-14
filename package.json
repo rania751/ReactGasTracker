@@ -10,7 +10,7 @@
     "axios": "^1.4.0",
     "boosted": "^5.2.3",
     "plotly": "^1.0.6",
-    "plotly.js": "^2.23.2",
+    "plotly.js": "^2.24.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-plotly.js": "^2.6.0",

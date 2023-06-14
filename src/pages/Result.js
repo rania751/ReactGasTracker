@@ -92,9 +92,7 @@ export const Result = () => {
   return (
 
   <div>
-    <br/>
    
-
 
 <div class="container">
 
